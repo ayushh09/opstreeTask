@@ -27,7 +27,7 @@ In this activity, you will create a simple Bicep file to deploy a Virtual Networ
 
 ### Verify Deployment
 
-- Check the Azure Portal to ensure that the virtual network is created in the specified region (eastus).
+- Check the Azure Portal to ensure that the virtual network is created in the specified region (centralindia).
 
 ### Additional Notes
 
