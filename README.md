@@ -36,14 +36,7 @@ Explore modularization using Bicep modules for code organization and reusability
 - Creation of Bicep module for a specific functionalities.
 - Utilize modules within a main Bicep file for improved code organization.
 - Understand input and output parameters in Bicep modules.
-
-## Bonus Lab: Advanced Resource Creation
-### Overview
-Challenge yourself with the creation of an additional Azure resource using advanced Bicep features.
-
-### Activities
-- Develop a Bicep file for deploying an Azure resource (e.g., Virtual Machine).
-
+  
 ---
 
 ## Getting Started
