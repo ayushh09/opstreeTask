@@ -1,5 +1,7 @@
+param resourceGroupName string
+
 resource resourceGroup 'Microsoft.Resources/resourceGroups@2021-04-01' existing = {
-  name: 'biceprg'
+  name: resourceGroupName
   scope: subscription()
 }
 
