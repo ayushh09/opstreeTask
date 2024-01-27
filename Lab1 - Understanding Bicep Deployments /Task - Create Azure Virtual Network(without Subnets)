@@ -1,7 +1,0 @@
-Task - Create an Virtual Network without subnets via Azure Bicep
-
-Steps - 1) Create a separate file with name vnet.bicep and add the configs.
-
-Help: - 
-        1) For Deployment Commands. Please check the readme.
-        2) For any other help - check documentation https://learn.microsoft.com/en-us/azure/templates/microsoft.network/virtualnetworks?pivots=deployment-language-bicep.
