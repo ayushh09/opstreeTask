@@ -13,7 +13,7 @@
       5. Save the changes to the `publicip.bicep` file.
       6. Output the publicIPAddressID.
 
-2. Deploy the child subnets 
+2. Deploy the Public IP Resource.
 
 2.1 using the Azure CLI command:
      ```bash
