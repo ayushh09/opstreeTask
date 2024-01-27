@@ -11,7 +11,7 @@
       3. Use a variable to generate a domainNameLabel based on the Public IP Name.
       4. Define a resource block for the Public IP Address in the Bicep file.
       5. Save the changes to the `publicip.bicep` file.
-      6. Output the subnetId for both bicepsubnet-1 and bicepsubnet-2.
+      6. Output the publicIPAddressID.
 
 2. Deploy the child subnets 
 
@@ -25,7 +25,8 @@
    - Open Visual Studio Code and navigate to the deployment pane (usually on the right-hand side).
    - Select the subscription and resource group.
    - Click the "Deploy to Azure" button.
-   - Choose the `subnets.bicep` file for deployment.
+   - Choose the `publicip.bicep` file for deployment.
+   - Choose the `publicip.bicepparam` file for parameters deployment.
 
 **Rechecking or Comparison:**
 - If you want to recheck or compare your solution, you can refer to the provided solutions in the solution folder. Review the README file in that folder for a step-by-step understanding of the lab's directory.
