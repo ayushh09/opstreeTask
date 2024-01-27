@@ -16,11 +16,11 @@ module publicip './publicip.bicep' = {
   }
 }
 
-module subnets './vnetchildparent.bicep' = {
+module subnets './subnets.bicep' = {
   name: 'subnetsModule'
 }
 
-module nsg './nsg.bicep' = {
+module nsg './networksecuritygroup.bicep' = {
   name: 'nsgmodule'
 }
 
