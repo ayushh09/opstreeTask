@@ -1,7 +1,7 @@
-param resourceGroupName string
+param nicName string = 'mynic'
 
 resource resourceGroup 'Microsoft.Resources/resourceGroups@2021-04-01' existing = {
-  name: resourceGroupName
+  name: 'biceprg'
   scope: subscription()
 }
 
@@ -24,33 +24,13 @@ module nsg './nsg.bicep' = {
   name: 'nsgmodule'
 }
 
-resource networkInterface 'Microsoft.Network/networkInterfaces@2020-11-01' = {
-  name: 'mynic'
-  location: 'Central India'
-  properties: {
-    ipConfigurations: [
-      {
-        name: 'myipconfig'
-        properties: {
-          privateIPAllocationMethod: 'Dynamic'
-          subnet: {
-            id: subnets.outputs.subnet2Id 
-          }
-          publicIPAddress: {
-            id: publicip.outputs.publicIPAddressID
-          }
-        }
-      }
-    ]
-    networkSecurityGroup: {
-      id: nsg.outputs.nsgId
-    }
+module nic './nic.bicep' = {
+  name: 'nicemodule'
+  params: {
+    nicName: nicName
+    location: resourceGroup.location
+    subnetId: subnets.outputs.subnet2Id
+    publicIPAddress: publicip.outputs.publicIPAddressID
+    networkSecurityGroupID: nsg.outputs.nsgId
   }
-  dependsOn: [
-    nsg
-    publicip
-    subnets
-  ]
 }
-
-
