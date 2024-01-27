@@ -9,7 +9,8 @@
       2. Utilize the `existing` keyword to reference the Virtual Network created in Lab 1.
       3. Define a new subnet named `bicepsubnet-1` with an address prefix of '10.0.0.0/24' [use the `parent` property].
       4. Define another subnet named `bicepsubnet-2` with an address prefix of '10.0.1.0/24' and specify a dependency on the existing Virtual Network [use the `dependsOn` property].
-      5. Save the changes to the `subnets.bicep` file.
+      5. Use parameters and variables wherever possible for increased flexibility.
+      6. Save the changes to the `subnets.bicep` file.
 
 2. Deploy the child subnets 
 
