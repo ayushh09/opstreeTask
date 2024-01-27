@@ -16,8 +16,8 @@ In this activity, you will enhance your Bicep skills by creating a Bicep file to
    - Define a new subnet named `bicepsubnet-1` with an address prefix of '10.0.0.0/24' [use the `parent` property].
    - Define another subnet named `bicepsubnet-2` with an address prefix of '10.0.1.0/24' and specify a dependency on the existing Virtual Network [use the `dependsOn` property].
 
-4. **Parameterize and Variableize:**
-   - Parameterize and variableize the necessary values for improved code flexibility.
+4. **Parameterize and Variablize:**
+   - Parameterize and Variablize the necessary values for improved code flexibility.
    - Consider parameterizing the Virtual Network name, subnet names, and address prefixes.
 
 5. **Save the Bicep File:**
