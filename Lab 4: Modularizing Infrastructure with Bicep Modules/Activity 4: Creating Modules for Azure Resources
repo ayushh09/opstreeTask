@@ -13,7 +13,7 @@
          - Network Security Group (nsg.bicep)
          - Network Interface (nic.bicep)[From resources folder]
       2. Make sure to use the `existing` keyword wherever applicable.
-      3. 
+      3. Add the parameters and variables in module.
       4. Save the changes to main Bicep file.
 
 2. Deploy the modularized resources 
