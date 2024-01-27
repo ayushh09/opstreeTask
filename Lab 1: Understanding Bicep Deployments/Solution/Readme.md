@@ -37,9 +37,6 @@ In this activity, you will create a simple Bicep file to deploy a Virtual Networ
 - **Code Simplicity:**
   - The Bicep code is intentionally not parameterized or variablized for simplicity in this introductory lab.
 
-- **Exploration Encouraged:**
-  - Encourage participants to explore the Azure Portal to view the deployed resources and gain hands-on experience.
-
 - **Customization:**
   - Feel free to adjust the file names, resource names, and additional settings based on your preferences or the specific learning objectives of the lab.
 
