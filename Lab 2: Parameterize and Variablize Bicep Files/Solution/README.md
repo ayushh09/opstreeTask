@@ -27,7 +27,7 @@ In this activity, you will enhance your Bicep skills by creating a Bicep file to
      az deployment group create --resource-group <resource group name> --template-file publicip.bicep --parameters publicip.bicepparam
      ```
      Replace `<resource group name>` with the name of your existing resource group.
-	- Alternatively, use the deployment pane on the right-hand side of Visual Studio Code. Select the correct resource group and parameters file.
+   - Alternatively, use the deployment pane on the right-hand side of Visual Studio Code. Select the correct resource group and parameters file.
 
 ### Verify Deployment
 
