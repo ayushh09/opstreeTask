@@ -1,8 +1,6 @@
-Certainly! Here's an example activity for Lab 4:
-
 ## Lab 4: Modularizing Resources using Bicep Modules
 
-### Activity 1: Creating Modules for Azure Resources
+### Activity 4: Creating Modules for Azure Resources
 
 1. Modularize the Azure resources created in previous labs using Bicep modules.
 
