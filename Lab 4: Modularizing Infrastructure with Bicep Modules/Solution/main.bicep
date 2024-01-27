@@ -24,7 +24,7 @@ module nsg './nsg.bicep' = {
   name: 'nsgmodule'
 }
 
-module nic './nic.bicep' = {
+module nic './networkInterface.bicep' = {
   name: 'nicemodule'
   params: {
     nicName: nicName
