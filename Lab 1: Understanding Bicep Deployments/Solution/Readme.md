@@ -23,7 +23,7 @@ In this activity, you will create a simple Bicep file to deploy a Virtual Networ
      ```bash
      az deployment group create --resource-group <resource group name> --template-file <path>/vnet.bicep
      ```
-     This command compiles the Bicep code into ARM template JSON (`main.json`) and deploys it to the Azure resource group.
+     This command compiles the Bicep code into ARM template JSON (`vnet.json`) and deploys it to the Azure resource group.
 
 ### Verify Deployment
 
