@@ -15,7 +15,7 @@
 
 2.1 using the Azure CLI command:
      ```bash
-     az deployment group create --resource-group <your-resource-group-name> --template-file subnets.bicep
+     az deployment group create --resource-group <your-resource-group-name> --template-file subnets.bicep --parameters subnets.bicepparam
      ```
      Replace `<your-resource-group-name>` with the name of your existing resource group.
                                          OR
