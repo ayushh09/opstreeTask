@@ -26,9 +26,11 @@ resource publicIPAddress 'Microsoft.Network/publicIPAddresses@2019-11-01' = {
     dnsSettings: {
       domainNameLabel: domainNameLabel
     }
-```
   }
 }
+```
 
 // Output block to expose values for reference
+```shell
 output publicIPAddressID string = publicIPAddress.id
+```
