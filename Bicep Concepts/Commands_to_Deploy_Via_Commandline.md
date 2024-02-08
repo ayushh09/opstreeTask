@@ -12,8 +12,9 @@ az deployment group create
  
   --name `demoRGDeployment ` 
  
- --resource-group ExampleGroup 
-  --template-file `main.bicep `
+ --resource-group `ExampleGroup`
+ 
+ --template-file `main.bicep `
  
  --parameters storageAccountType=`Standard_GRS`
 
@@ -43,6 +44,7 @@ az deployment sub create
 
 ## Powershell
 New-AzSubscriptionDeployment 
+ 
   -Name `demoSubDeployment `
   
   -Location `centralus` 
