@@ -77,7 +77,10 @@ New-AzManagementGroupDeployment
 
   -ManagementGroupId `myMG `
 
-  -TemplateUri `"https://raw.githubusercontent.com/Azure/azure-docs-json-samples/master/management-level-deployment/azuredeploy.json"`
+  -TemplateUri 
+  ```shell
+  https://raw.githubusercontent.com/Azure/azure-docs-json-samples/master/management-level-deployment/azuredeploy.json
+  ```
 
 
 ### ******** Tenant ********
