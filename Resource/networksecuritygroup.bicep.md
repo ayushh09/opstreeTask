@@ -1,3 +1,4 @@
+```shell
 resource networkSecurityGroup 'Microsoft.Network/networkSecurityGroups@2019-11-01' = {
   name: 'mynsgbicep'
   location: resourceGroup().location
@@ -20,5 +21,5 @@ resource networkSecurityGroup 'Microsoft.Network/networkSecurityGroups@2019-11-0
     ]
   }
 }
-
+```
 output nsgId string = networkSecurityGroup.id
