@@ -1,11 +1,11 @@
 ## Activity 1: Deploying a Virtual Network without Subnet
 
-1. Create a virtual network without subnets in an already created resource group.
+### 1. Create a virtual network without subnets in an already created resource group.
 
-   ### Instructions
-      1. Bicep file name should be vnet.bicep
+   #### Instructions
+   - Bicep file name should be `vnet.bicep`
 
-2. Deploy the virtualnetwork using az cli command.
+### 2. Deploy the virtualnetwork using az cli command.
    - Use the following Azure CLI command to deploy the virtual network using the Bicep file:
      ```bash
      az deployment group create --resource-group <your-resource-group-name> --template-file vnet.bicep
