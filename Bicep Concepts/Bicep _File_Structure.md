@@ -1,3 +1,5 @@
+
+```shell
 //Scope at which resource will be deployed in Azure Hierarchy
 targetScope = '<scope>'
 
@@ -12,6 +14,7 @@ var <variable-name> = <variable-value>
 resource <resource-symbolic-name> '<resource-type>@<api-version>' = {
   <resource-properties>
 }
+```
 
 // Module (optional)
 module <module-symbolic-name> '<path-to-file>' = {
