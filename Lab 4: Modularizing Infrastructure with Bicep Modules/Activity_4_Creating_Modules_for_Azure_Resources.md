@@ -19,10 +19,12 @@
 2. Deploy the modularized resources 
 
 2.1 using the Azure CLI command:
+
      ```bash
      az deployment group create --resource-group <your-resource-group-name> --template-file main.bicep --parameters main.bicepparam
      ```
-     Replace `<your-resource-group-name>` with the name of your existing resource group.
+
+Replace `<your-resource-group-name>` with the name of your existing resource group.
                                          OR
 2.2. Alternatively, deploy the modularized resources using the Visual Studio Code deployment pane:
    - Open Visual Studio Code and navigate to the deployment pane (usually on the right-hand side).
