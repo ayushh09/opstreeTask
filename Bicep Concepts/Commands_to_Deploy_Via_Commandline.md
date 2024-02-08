@@ -8,11 +8,11 @@
 #### ******** Resource group ********
 
 # AZCLI
-az deployment group create \ 
-  --name `demoRGDeployment \` 
+az deployment group create 
+  --name `demoRGDeployment ` 
  
- --resource-group ExampleGroup \ 
-  --template-file `main.bicep \`
+ --resource-group ExampleGroup 
+  --template-file `main.bicep `
  
  --parameters storageAccountType=`Standard_GRS`
 
@@ -29,10 +29,10 @@ New-AzResourceGroupDeployment
 #### ******** Subscription ********
 
 # AZCLI
-az deployment sub create \
-  --name `demoSubDeployment` \
-  --location `centralus` \
-  --template-file `main.bicep` \
+az deployment sub create 
+  --name `demoSubDeployment` 
+  --location `centralus` 
+  --template-file `main.bicep` 
   --parameters `rgName=demoResourceGroup` `rgLocation=centralus`
 
 # Powershell
@@ -50,10 +50,10 @@ New-AzSubscriptionDeployment
 #### ******** Management Group ********
 
 # AZCLI
-az deployment mg create \
-  --name `demoMGDeployment` \
-  --location `WestUS` \
-  --management-group-id `myMG` \
+az deployment mg create 
+  --name `demoMGDeployment` 
+  --location `WestUS` 
+  --management-group-id `myMG` 
   --template-uri `"https://raw.githubusercontent.com/Azure/azure-docs-json-samples/master/management-level-deployment/azuredeploy.json"`
 
 # Powershell
