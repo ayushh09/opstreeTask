@@ -17,12 +17,13 @@
 
 2.1 using the Azure CLI command:
     
- ```bash
+ ```shell
      az deployment group create --resource-group <your-resource-group-name> --template-file publicip.bicep --parameters <parameter-file-name>.bicepparam
  ```
-     Replace `<your-resource-group-name>` with the name of your existing resource group.
-                                       
-                                           OR
+Replace `<your-resource-group-name>` with the name of your existing resource group.
+
+                                        OR 
+                                        
 2.2. Alternatively, deploy the child subnets using the Visual Studio Code deployment pane:
    - Open Visual Studio Code and navigate to the deployment pane (usually on the right-hand side).
    - Select the subscription and resource group.
