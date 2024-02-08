@@ -66,7 +66,7 @@ az deployment mg create
 
   --template-uri 
   ```shell
-  https://raw.githubusercontent.com/Azure/azure-docs-json-samples/master/management-level-deployment/azuredeploy.json"`
+  https://raw.githubusercontent.com/Azure/azure-docs-json-samples/master/management-level-deployment/azuredeploy.json
   ```
 ## Powershell
 New-AzManagementGroupDeployment 
