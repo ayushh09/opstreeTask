@@ -8,18 +8,22 @@
 #### ******** Resource group ********
 
 # AZCLI
-az deployment group create \
-  --name demoRGDeployment \
-  --resource-group ExampleGroup \
-  --template-file main.bicep \
-  --parameters storageAccountType=Standard_GRS
+az deployment group create \ `
+  --name demoRGDeployment \` 
+ 
+ --resource-group ExampleGroup \ `
+  --template-file main.bicep \`
+ 
+ --parameters storageAccountType=Standard_GRS
 
 # Powershell
 New-AzResourceGroupDeployment `
   -Name demoRGDeployment `
-  -ResourceGroupName ExampleGroup `
+ 
+ -ResourceGroupName ExampleGroup `
   -TemplateFile main.bicep `
-  -storageAccountType Standard_GRS `
+ 
+ -storageAccountType Standard_GRS `
 
 #### ******** Subscription ********
 
