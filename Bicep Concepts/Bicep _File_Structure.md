@@ -14,7 +14,7 @@ var <variable-name> = <variable-value>
 resource <resource-symbolic-name> '<resource-type>@<api-version>' = {
   <resource-properties>
 }
-```
+
 
 // Module (optional)
 module <module-symbolic-name> '<path-to-file>' = {
@@ -26,3 +26,4 @@ module <module-symbolic-name> '<path-to-file>' = {
 
 // Output (optional)
 output <output-name> <output-data-type> = <output-value></output-value>
+```
