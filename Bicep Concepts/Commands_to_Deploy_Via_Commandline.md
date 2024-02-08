@@ -70,5 +70,7 @@ az deployment tenant create \
 # Powershell
 New-AzTenantDeployment `
   -Name demoTenantDeployment `
-  -Location "West US" `
-  -TemplateFile main.bicep
+  
+  -Location `West US`
+  
+  -TemplateFile `main.bicep`
