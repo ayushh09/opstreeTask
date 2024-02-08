@@ -1,3 +1,4 @@
+```shell
 resource virtualNetwork 'Microsoft.Network/virtualNetworks@2019-11-01' = {
   name: 'myfirstvnet'
   location: resourceGroup().location
@@ -9,3 +10,4 @@ resource virtualNetwork 'Microsoft.Network/virtualNetworks@2019-11-01' = {
     }
   }
 }
+```
