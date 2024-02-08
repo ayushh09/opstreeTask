@@ -9,6 +9,7 @@
 
 # AZCLI
 az deployment group create 
+ 
   --name `demoRGDeployment ` 
  
  --resource-group ExampleGroup 
@@ -18,6 +19,7 @@ az deployment group create
 
 # Powershell
 New-AzResourceGroupDeployment 
+ 
   -Name `demoRGDeployment `
  
  -ResourceGroupName `ExampleGroup `
@@ -30,9 +32,13 @@ New-AzResourceGroupDeployment
 
 # AZCLI
 az deployment sub create 
+  
   --name `demoSubDeployment` 
+ 
   --location `centralus` 
+ 
   --template-file `main.bicep` 
+  
   --parameters `rgName=demoResourceGroup` `rgLocation=centralus`
 
 # Powershell
@@ -51,13 +57,18 @@ New-AzSubscriptionDeployment
 
 # AZCLI
 az deployment mg create 
+ 
   --name `demoMGDeployment` 
+
   --location `WestUS` 
+
   --management-group-id `myMG` 
+
   --template-uri `"https://raw.githubusercontent.com/Azure/azure-docs-json-samples/master/management-level-deployment/azuredeploy.json"`
 
 # Powershell
 New-AzManagementGroupDeployment 
+
   -Name `demoMGDeployment `
 
   -Location `West US `
@@ -71,6 +82,7 @@ New-AzManagementGroupDeployment
 
 # AZCLI
 az deployment tenant create 
+
   --name `demoTenantDeployment`
 
   --location `WestUS`
@@ -79,6 +91,7 @@ az deployment tenant create
 
 # Powershell
 New-AzTenantDeployment 
+ 
   -Name `demoTenantDeployment `
   
   -Location `West US`
