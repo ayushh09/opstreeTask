@@ -12,7 +12,7 @@
    3. Use a variable to generate a domainNameLabel based on the Public IP Name.
    4. Define a resource block for the Public IP Address in the Bicep file.
    5. Save the changes to the `publicip.bicep` file.
-   6. Output the publicIPAddressID.
+   6. Output the `publicIPAddressID`.
 
 ### 2. Deploy the Public IP Resource. 
 #### 2.1 using the Azure CLI command:
