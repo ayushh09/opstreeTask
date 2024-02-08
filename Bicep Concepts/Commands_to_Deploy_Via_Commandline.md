@@ -1,36 +1,36 @@
-Scopes
+# Scopes
 
 1) Resource group
 2) Subscription
 3) Management group
 4) Tenant
 
-******** Resource group ********
+# ******** Resource group ********
 
-AZCLI
+# AZCLI
 az deployment group create \
   --name demoRGDeployment \
   --resource-group ExampleGroup \
   --template-file main.bicep \
   --parameters storageAccountType=Standard_GRS
 
-Powershell
+# Powershell
 New-AzResourceGroupDeployment `
   -Name demoRGDeployment `
   -ResourceGroupName ExampleGroup `
   -TemplateFile main.bicep `
   -storageAccountType Standard_GRS `
 
-******** Subscription ********
+# ******** Subscription ********
 
-AZCLI
+# AZCLI
 az deployment sub create \
   --name demoSubDeployment \
   --location centralus \
   --template-file main.bicep \
   --parameters rgName=demoResourceGroup rgLocation=centralus
 
-Powershell
+# Powershell
 New-AzSubscriptionDeployment `
   -Name demoSubDeployment `
   -Location centralus `
@@ -38,16 +38,16 @@ New-AzSubscriptionDeployment `
   -rgName demoResourceGroup `
   -rgLocation centralus
 
-******** Management Group ********
+# ******** Management Group ********
 
-AZCLI
+# AZCLI
 az deployment mg create \
   --name demoMGDeployment \
   --location WestUS \
   --management-group-id myMG \
   --template-uri "https://raw.githubusercontent.com/Azure/azure-docs-json-samples/master/management-level-deployment/azuredeploy.json"
 
-Powershell
+# Powershell
 New-AzManagementGroupDeployment `
   -Name demoMGDeployment `
   -Location "West US" `
@@ -55,15 +55,15 @@ New-AzManagementGroupDeployment `
   -TemplateUri "https://raw.githubusercontent.com/Azure/azure-docs-json-samples/master/management-level-deployment/azuredeploy.json"
 
 
-******** Tenant ********
+# ******** Tenant ********
 
-AZCLI
+# AZCLI
 az deployment tenant create \
   --name demoTenantDeployment \
   --location WestUS \
   --template-file main.bicep
 
-Powershell
+# Powershell
 New-AzTenantDeployment `
   -Name demoTenantDeployment `
   -Location "West US" `
