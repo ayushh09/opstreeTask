@@ -16,11 +16,13 @@
 2. Deploy the child subnets 
 
 2.1 using the Azure CLI command:
-     ```bash
+    
+ ```bash
      az deployment group create --resource-group <your-resource-group-name> --template-file subnets.bicep --parameters subnets.bicepparam
-     ```
-     Replace `<your-resource-group-name>` with the name of your existing resource group.
+  ```
+Replace `<your-resource-group-name>` with the name of your existing resource group.
                                          OR
+
 2.2. Alternatively, deploy the child subnets using the Visual Studio Code deployment pane:
    - Open Visual Studio Code and navigate to the deployment pane (usually on the right-hand side).
    - Select the subscription and resource group.
