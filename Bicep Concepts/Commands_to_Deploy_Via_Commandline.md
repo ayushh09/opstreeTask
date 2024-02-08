@@ -5,7 +5,7 @@
 3) Management group
 4) Tenant
 
-# ******** Resource group ********
+#### ******** Resource group ********
 
 # AZCLI
 az deployment group create \
@@ -21,7 +21,7 @@ New-AzResourceGroupDeployment `
   -TemplateFile main.bicep `
   -storageAccountType Standard_GRS `
 
-# ******** Subscription ********
+#### ******** Subscription ********
 
 # AZCLI
 az deployment sub create \
@@ -38,7 +38,7 @@ New-AzSubscriptionDeployment `
   -rgName demoResourceGroup `
   -rgLocation centralus
 
-# ******** Management Group ********
+#### ******** Management Group ********
 
 # AZCLI
 az deployment mg create \
@@ -55,7 +55,7 @@ New-AzManagementGroupDeployment `
   -TemplateUri "https://raw.githubusercontent.com/Azure/azure-docs-json-samples/master/management-level-deployment/azuredeploy.json"
 
 
-# ******** Tenant ********
+#### ******** Tenant ********
 
 # AZCLI
 az deployment tenant create \
