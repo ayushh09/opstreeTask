@@ -56,5 +56,7 @@ resource subnet2 'Microsoft.Network/virtualNetworks/subnets@2023-06-01' = {
 ```
 
 // Output block to expose values for reference
+```shell
 output subnet1Id string = subnet1.id
 output subnet2Id string = subnet2.id
+```
