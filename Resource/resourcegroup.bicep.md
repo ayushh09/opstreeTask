@@ -1,5 +1,6 @@
-// The target scope determines where the resource or module is provisioned within the Azure hierarchy.//
-// The scope at which a resource or module is deployed. //
+// The target scope determines where the resource or module is provisioned within the Azure hierarchy.
+
+// The scope at which a resource or module is deployed. 
 ```shell
 targetScope = 'subscription'
 
